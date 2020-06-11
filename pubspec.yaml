@@ -1,0 +1,53 @@
+name: base_structure
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.3
+  dio: ^3.0.9
+  retrofit: ^1.3.4
+  json_serializable: ^3.3.0
+  json_annotation: ^3.0.1
+  internationalization: ^3.0.0+1
+  moduler_route: ^1.1.0
+  sembast: ^2.4.4+3
+  hive_flutter: ^0.3.0+2
+  path_provider: ^1.6.10
+  rxdart: ^0.24.1
+  uuid: ^2.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^4.1.1
+  build_runner: ^1.10.0
+  json_serializable_generator: ^1.0.1
+  retrofit_generator: ^1.3.7
+  flutter_launcher_icons: ^0.7.5
+
+flutter:
+  uses-material-design: true
+  assets:
+    - ./assets/translations/en/US/
+    - ./assets/translations/pt/BR/
+
+internationalization:
+  output-path: lib/infrastructure/resource/
+  path: assets/translations
+  locales:
+    - locale:
+      language-code: pt
+      countries-code:
+        - BR
+    - locale:
+      language-code: en
+      countries-code:
+        - US

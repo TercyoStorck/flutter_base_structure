@@ -1,0 +1,1 @@
+class EmptyValidationException implements Exception {}
